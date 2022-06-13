@@ -1,0 +1,41 @@
+@use "variables" as var;
+
+.contact-container {
+    .contact-container__inner-box {
+        width: 96%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            text-align: center;       
+        }
+
+        .contact-container__message {
+            font-weight: bold;
+            padding: 0 24px 0 0;
+            @media screen and (max-width: 1000px) {
+                padding: 0 0 8px 0;
+                width: 100%;
+            }
+        }
+        .contact-container__tel {
+            font-size: 36px;
+            font-weight: bold;
+            padding: 0 24px 0 0;
+            @media screen and (max-width: 1000px) {
+                font-size: 24px;
+                padding: 0 0 8px 0;
+                width: 100%;
+            }
+        }
+        .contact-container__biz-hours {
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+        }
+    }
+}

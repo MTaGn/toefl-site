@@ -1,0 +1,115 @@
+@use "variables" as var;
+
+.category-cat1-page-container {
+}
+
+.category-cat1-page-container__inner-container {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.category-cat1-page-container__heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 56px 0;
+}
+
+.category-cat1-page-container__blog-box {
+    padding: 0 0 88px 0;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 599px) {
+        flex-direction: column;
+        padding: 0 0 56px 0;
+    }
+}
+
+.category-cat1-page-container__subheading {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.category-cat1-page-container__img-block {
+    position: relative;
+    padding: 0 32px 0 0;
+    width: 40%;
+    @media screen and (max-width: 599px) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.category-cat1-page-container__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px 4px;
+    width: 70px;
+}
+
+.category-cat1-page-container__img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 26/19;
+}
+
+.category-cat1-page-container__blog-detail-block {
+    width: 60%;
+    @media screen and (max-width: 599px) {
+        width: 100%;
+    }
+}
+
+.category-cat1-page-container__blog-date {
+    padding: 0 0 24px 0;
+}
+
+.category-cat1-page-container__subheading {
+    margin: 0 0 24px 0;
+    text-decoration: underline;
+}
+
+.pagination {
+    width: 100%;
+    padding: 40px;
+}
+
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 599px) {
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin: 0 24px 0 0;
+        @media screen and (max-width: 599px) {
+            padding: 4px 8px;
+            margin: 0 24px 16px 0;
+        }
+    }
+
+    li .current {
+        border: solid 1px#000000;
+        padding: 8px 16px;
+        background-color: var.$font-color;
+        color: #ffffff;
+        @media screen and (max-width: 599px) {
+            padding: 4px 8px;
+            margin: 0 24px 16px 0;
+        }
+    }
+
+    li a {
+        border: solid 1px#000000;
+        padding: 8px 16px;
+        @media screen and (max-width: 599px) {
+            padding: 4px 8px;
+        }
+    }
+}

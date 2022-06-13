@@ -1,0 +1,43 @@
+@use "variables" as var;
+
+.conversion-container {
+    background-image: url("./assets/img/cta.png");
+    background-size: cover;
+    padding: 72px 0 40px;
+    background-position: center;
+    width: 100%;
+    
+    .conversion-container__inner-box {
+        width: 96%;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+
+        .conversion-container__main-text {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 0 0 16px 0;
+            @media screen and (max-width: 1000px) {
+                font-size: 24px;
+            }
+        }
+        .conversion-container__doc-request {
+            display: block;
+            background-color: var.$btn-doc-request;
+            border-radius: 31px;
+            width: 260px;
+            height: 60px;
+            line-height: 60px;
+            margin: 32px auto 24px auto;
+            color: #ffffff;
+            @media screen and (max-width: 1000px) {
+                margin: 16px auto 24px auto;
+            }
+        }
+        .conversion-container__contact {
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff;
+        }
+    }
+}

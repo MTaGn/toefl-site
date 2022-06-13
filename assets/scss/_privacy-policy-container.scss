@@ -1,0 +1,19 @@
+.privacy-policy-container {
+    width: 100%;
+}
+
+.privacy-policy-container__inner-box {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 88px 0;
+}
+
+.privacy-policy-container__heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+        font-size: 24px;
+    }
+}

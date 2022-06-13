@@ -1,0 +1,210 @@
+@use "variables" as var;
+
+// 料金体系エリア
+.prie-page-container {
+    
+}
+
+.prie-page-container__mainvisual-box {
+    background-image: url("./assets/img/cta.png");
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+}
+
+.prie-page-container__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.prie-page-container__inner-box {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    @media screen and (max-width: 599px) {
+        width: 96%;
+    }
+}
+
+.prie-page-container__price-desc-box {
+    padding: 0 0 88px 0;
+}
+
+.prie-page-container__subheading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 56px 0;
+}
+
+.prie-page-container__price-figure-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 750px;
+    margin: 0 auto 48px;
+    @media screen and (max-width: 599px) {
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
+.prie-page-container__monthly-block,
+.prie-page-container__admission-block {
+    background-color: #1b224c;
+    width: calc((100% - 100px) / 2);
+    @media screen and (max-width: 599px) {
+        width: 100%;
+    }
+}
+
+.prie-page-container__admission-text,
+.prie-page-container__monthly-text {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 32px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 599px) {
+        padding: 16px 32px;
+    }
+}
+
+.prie-page-container__plus-block {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    @media screen and (max-width: 599px) {
+        margin: 16px 0;
+    }
+}
+
+.prie-page-container__plus-block::before {
+    content: "";
+    display: block;
+    background-color: #1b224c;
+    width: 26px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.prie-page-container__plus-block::after {
+    content: "";
+    display: block;
+    background-color: #1b224c;
+    width: 2px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prie-page-container__monthly-block {
+}
+
+// 料金表エリア
+.prie-page-container__price-table {
+}
+
+.prie-page-container__subheading {
+
+}
+
+.prie-page-container__price-table-figures-box {
+    padding: 0 0 64px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+    @media screen and (max-width: 1000px) {
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 0 auto;
+        .prie-page-container__price-table-figure:nth-of-type(1),
+        .prie-page-container__price-table-figure:nth-of-type(2) {
+            margin: 0 0 16px 0;
+        }
+    }
+    @media screen and (max-width: 599px) {
+        flex-direction: column;
+    }
+}
+
+.prie-page-container__price-table-figure {
+    width: calc( (100% - 40px) / 4);
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+        width: calc( (100% - 40px) / 2);
+    }
+    @media screen and (max-width: 599px) {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 0 16px 0;
+    }
+}
+
+.prie-page-container__price-table-text-area {
+    border: solid 1px #1b224c;
+    height: 400px;
+}
+
+.prie-page-container__price-table-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b224c;
+    color: #ffffff;
+    padding: 16px 0;
+}
+.prie-page-container__price-table-plan-title {
+    font-weight: bold;
+}
+.prie-page-container__price-table-plan--recommendation {
+    flex-direction: column;
+    background-color: #f5a623;
+    color: #ffffff;
+    .prie-page-container__price-table-plan-title:first-child {
+        padding: 0 0 16px 0;
+    }
+}
+
+.prie-page-container__price-table-price {
+    padding: 32px 0 0;
+}
+
+.prie-page-container__price-table-text {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 16px 0;
+}
+
+.prie-page-container__price-table-caption {
+    padding: 0 0 48px 0;
+}
+
+.prie-page-container__price-table-support {
+}
+
+.prie-page-container__price-table-support-text {
+    padding: 0 0 24px 0;
+}
+.prie-page-container__price-table-support-text::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #1b224c;
+    margin: 0 8px 0 0;
+}
+.prie-page-container__price-table-support-text:nth-last-of-type(1) {
+    padding: 0 0 56px 0;
+}

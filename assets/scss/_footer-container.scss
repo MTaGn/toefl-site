@@ -1,0 +1,75 @@
+@use "variables" as var;
+
+.footer-container {
+    background-color: var.$bkg-color-blk;
+    color: #ffffff;
+
+    .footer-container__inner-box {
+        width: 96%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 0 64px;
+        position: relative;
+        @media screen and (max-width: var.$breakpoint) {
+            padding: 32px 0 32px;
+        }
+
+        .footer-container__bottom-box {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: var.$breakpoint) {
+                flex-direction: column;
+            }
+            
+            .footer-container__menu-list {
+                display: flex;
+                
+                .footer-container__menu {
+                    align-self: flex-start;
+                    padding: 0 16px;
+                    border-right: 1px solid #ffffff;
+                    @media screen and (max-width: var.$breakpoint) {
+                        border-right: none;
+                        width: 50%;
+                        text-align: center;
+                        margin: 0 0 16px 0;
+                    }
+                }
+                @media screen and (max-width: var.$breakpoint) {
+                    flex-wrap: wrap;
+
+                    .footer-container__menu:nth-of-type(odd) {
+                        border-right: 1px solid #ffffff;
+                    }
+                }
+            }
+            .footer-container__info-box {
+                .footer-container__logo-block {
+                    background-color: #ffffff;
+                    padding: 16px;
+                    margin: 0 0 24px 0; 
+                    @media screen and (max-width: var.$breakpoint) {
+                        max-width: 180px;
+                        margin: 0 auto 16px;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                .footer-container__tel {
+                    text-align: right;
+                    padding: 0 0 16px 0;
+
+                    .footer-container__tel-icon {
+                        .footer-container__tel-icon-img {
+                            width: 12px;
+                        }
+                    }
+                }
+                .footer-container__hours {
+                    text-align: right;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

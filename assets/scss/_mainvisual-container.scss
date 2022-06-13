@@ -1,0 +1,141 @@
+@use "variables" as var;
+
+.mainvisual-container {
+    .mainvisual-container__mainvisual-box {
+        height: 80%;
+        width: 100%;
+        background-image: url("./assets/img/fv.png");
+        background-size: cover;
+        text-align: center;
+        color: #ffffff;
+        padding: 72px 0 116px 0;
+        @media screen and (max-width: 1000px) {
+            height: 60%;
+            padding: 48px 0 48px 0;
+        }
+
+        .mainvisual-container__main-text {
+            padding: 0 0 32px 0;
+            font-size: 48px;
+            font-weight: bold;
+            @media screen and (max-width: 1000px) {
+                font-size: 31px;
+            }
+        }
+        .mainvisual-container__detail {
+            padding: 0 0 .9rem 0;
+            font-size: 18px;
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;
+            }
+        }
+        .mainvisual-container__doc-request {
+            display: block;
+            background-color: var.$btn-doc-request;
+            border-radius: 31px;
+            width: 260px;
+            height: 60px;
+            line-height: 60px;
+            margin: 32px auto 24px auto;
+            @media screen and (max-width: 1000px) {
+                margin: 16px auto 24px auto;
+            }
+        }
+        .mainvisual-container__contact {
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+    .mainvisual-container__worry-box {
+        padding: var.$section-padding;
+        background-color: var.$sub-color;
+        color: #ffffff;
+        @media screen and (max-width: 1000px) {
+            padding: 8px 0;
+        }
+
+        .inner-container {
+            width: 70%; // 900/1280=70%なので
+            max-width: 900px;
+            margin: 0 auto;
+            @media screen and (max-width: 1000px) {
+                width: 96%;
+            }
+        }
+        .mainvisual-container____inner-box {
+            text-align: center;
+
+            .mainvisual-container__subheading {
+                font-size: 36px;
+                font-weight: bold;
+                @media screen and (max-width: 1000px) {
+                    font-size: 24px;
+                    line-height: 1.5;
+                    padding: 16px;
+                }
+
+                .pc-indention {
+                    display: none;
+                    @media screen and (max-width: 1000px) {
+                        display: inline;
+                    }
+                }
+            }
+            .mainvisual-container__worry-boxes {
+                display: flex;
+                justify-content: space-around;
+                padding: 0 0 80px 0;
+                @media screen and (max-width: 1000px) {
+                    flex-direction: column;
+                    padding: 0 0 16px 0;
+                }
+
+                .mainvisual-container__worry-box {
+                    line-height: 2;
+
+                    .mainvisual-container__worry {
+                        @media screen and (max-width: 1000px) {
+                            list-style: inside;
+                        }
+                        .pc-indention {
+                            display: inline;
+                            @media screen and (max-width: 1000px) {
+                                display: none;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            .mainvisual-container__service-desc-box {
+                background-color: #ffffff;
+                padding: 8px 16px;
+
+                .mainvisual-container__service-desc-inner-box {
+                    color: var.$font-color;
+                    border: 5px solid var.$font-color;
+                    padding: 16px 0;
+
+                    .mainvisual-container__service-desc-main-text {
+                        font-size: 36px;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        @media screen and (max-width: 1000px) {
+                            font-size: 21px;
+                        }
+
+                        .mainvisual-container__underline {
+                            background: linear-gradient(transparent 70%, var.$btn-doc-request 70%);
+                        }
+                    }
+                    .mainvisual-container__service-desc-main-text:nth-child(2) {
+                        padding: 0 0 24px 0;                    
+                    }
+                    .mainvisual-container__service-desc-detail-text {
+                        line-height: 1.7;
+                    }
+                }
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@use "variables" as var;
+
+.how-to-use-container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 56px 0 96px;
+
+    .how-to-use-container__inner-box {
+        max-width: 900px;
+        width: 96%;
+        margin: 0 auto;
+
+        .how-to-use-container__subheading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 48px 0;
+        }
+        .how-to-use-container__desc-box {
+            border-bottom: 2px solid #696969;
+            padding: 24px 0;
+
+            .how-to-use-container__main-text {
+                position: relative;
+                cursor: pointer;
+                padding: 0 32px 0 0;
+
+                .how-to-use-container__toggle {
+                    position: absolute;
+                    display: inline-block;
+                    right: 20px;
+                    width: 2px;
+                    height: 20px;
+                    background-color: var.$font-color;
+                    cursor: pointer;
+                }
+                .how-to-use-container__plus-beside {
+                    transform: rotate(90deg);
+                }
+                .how-to-use-container__hidden {
+                    display: none;
+                }
+            }
+            .how-to-use-container__answer-text {
+                background-color: #d3d3d3;
+                padding: 16px 16px 16px 24px;
+                margin: 16px 0 0 0;
+
+            }
+            .how-to-use-container__hidden {
+                display: none;
+            }
+        }
+        .how-to-use-container__desc-box:nth-of-type(1) {
+            border-top: 2px solid #696969;
+        }
+    }
+}

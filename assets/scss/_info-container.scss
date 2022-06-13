@@ -1,0 +1,40 @@
+@use "variables" as var;
+
+.info-container {
+    width: 45%;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+
+    .info-container__subheading {
+        font-size: 32px;
+        font-weight: bold;
+        padding: 0 0 32px 0;
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+        }
+    }
+    .info-container__info-detail-blocks {
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+        }
+        
+        .info-container__info-detail-block {
+            padding: 0 0 48px 0;
+
+            .info-container__info-date {
+                font-size: 12px;
+                padding: 0 0 16px 0;
+
+                span {
+                    text-decoration: underline;
+                    padding: 4px 16px;
+                    margin: 0 0 0 24px;
+                }
+            }
+            .info-container__info-detail {
+                text-decoration: underline;
+            }
+        }
+    }
+}

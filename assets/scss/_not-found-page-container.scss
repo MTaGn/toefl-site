@@ -1,0 +1,21 @@
+@use "variables" as var;
+
+.not-found-page-container {
+    height: calc(100vh - 80px);
+}
+
+.not-found-page-container__inner-box {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 88px 0;
+    text-align: center;
+}
+
+.not-found-page-container__title {
+    font-size: 32px;
+    font-weight: bold;
+    @media screen and (max-width: 599px) {
+        font-size: 24px;
+    }
+}

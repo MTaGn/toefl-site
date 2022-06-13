@@ -1,0 +1,17 @@
+@use "variables" as var;
+
+.blog-info-container {
+    width: 100%;
+
+    .blog-info-container__inner-box {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            width: 96%;
+        }
+    }
+}

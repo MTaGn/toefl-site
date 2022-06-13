@@ -1,0 +1,145 @@
+@use "variables" as var;
+
+.strengths-container {
+    background-color: #ffffff;
+    width: 100%;
+    @media screen and (max-width: 1000px) {
+        color: #ffffff;
+    }
+
+    .strengths-container__inner-box {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 0 40px 0;
+        @media screen and(max-width: 1000px) {
+            width: 100%; 
+            padding: 48px 0 48px 0;
+        }
+
+        .strengths-container__subheading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 56px 0 56px 0;
+            @media screen and (max-width: 1000px) {
+                font-size: 24px;
+                padding: 0 0 32px 0;
+                color: var.$font-color;
+            }
+            
+            .sp-indention {
+                display: none;
+                @media screen and (max-width: 1000px) {
+                    display: inline;
+                }
+            }
+        }
+        .strengths-container__strength-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 56px 0;
+            @media screen and (max-width: 1000px) {
+                position: relative;
+            }
+
+            .strengths-container__strength-main-text-block{
+                @media screen and (max-width: 1000px) {
+                    width: 96%;
+                    margin: 0 auto;    
+                    position: relative;
+                    z-index: 20;
+                }
+
+                .strengths-container__strength-label {
+                    font-size: 12px;
+                    width: 90px;
+                    height: 30px;
+                    background-color: var.$btn-doc-request;
+                    color: #ffffff;
+                    line-height: 30px;
+                    text-align: center;
+                    margin: 0 0 32px 0;
+                }
+                .strengths-container__strength-main-text {
+                    font-size: 26px;
+                    font-weight: bold;
+                    line-height: 1.5;
+                    margin: 0 0 40px 0;
+                }
+                .strengths-container__strength-detail-text-block {
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+            }
+            .strengths-container__img-block {
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
+                .strengths-container__strength-box-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .strengths-container__strength-box:nth-of-type(3) {
+            padding: 0 0 96px 0;
+        }
+         @media screen and (max-width: 1000px) {
+            .strengths-container__strength-box::after {
+                content: "";
+                display: block;
+                background-color: #000000;
+                opacity: .5;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .strengths-container__feature01 {
+                background-image: url("./assets/img/feature01.png");
+                background-size: cover;
+            }
+            .strengths-container__feature02 {
+                background-image: url("./assets/img/feature02.png");
+                background-size: cover;
+            }
+            .strengths-container__feature03 {
+                background-image: url("./assets/img/feature03.png");
+                background-size: cover;
+            }
+        }
+        .strengths-container__price-box {
+            background-image: url("./assets/img/price.png");
+            width: 100%;
+            padding: 56px 0 56px 0;
+
+            .strengths-container__price-box-text {
+                font-size: 26px;
+                font-weight: bold;
+                color: #ffffff;
+                text-align: center;
+                padding: 0 0 24px 0;
+            }
+            .strengths-container__show-price-btn {
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                margin: 0 auto;
+                width: 200px;
+                height: 50px;
+                border-radius: 30px;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            .strengths-container__show-price-btn:hover {
+                background-color: #ffffff;
+                color: var.$font-color;
+            }
+        }
+    }
+}

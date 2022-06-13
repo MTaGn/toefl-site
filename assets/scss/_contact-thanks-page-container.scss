@@ -1,0 +1,26 @@
+@use "variables" as var;
+
+.contact-thanks-page-container {
+    width: 100%;
+}
+
+.contact-thanks-page-container__inner-box {
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 88px 0;
+    text-align: center;
+}
+
+.contact-thanks-page-container__heading {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 32px;
+    @media screen and (max-width: 599px) {
+        font-size: 24px;
+    }
+}
+
+.contact-thanks-page-container__content {
+    text-align: center;
+}

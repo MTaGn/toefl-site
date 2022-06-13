@@ -1,0 +1,99 @@
+@use "variables" as var;
+
+.case-study-container {
+    width: 100%;
+    background-color: var.$bkg-color-blk;
+    color: #ffffff;
+
+    .case-study-container__inner-box {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 56px 0;
+        @media screen and (max-width: 1000px) {
+            width: 96%;
+        }
+
+        .case-study-container__subheading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 136px 0;
+            @media screen and (max-width: 1000px) {
+                padding: 0 0 56px 0;
+            }
+        }
+        .case-study-container__case-boxes {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
+            
+            .case-study-container__case-box{
+                 padding: 0 0 48px 0;
+                 width: 32%;
+                 @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
+
+                .case-study-container__case {
+
+                    .case-study-container__case-title {
+                        padding: 0 0 8px 0;
+                        @media screen and (max-width: 1000px) {
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    .case-study-container__case-img-box {
+                        background-color: #ffffff;
+                        width: 100%;
+                        padding: 32px 64px 0;
+                        margin: 0 0 16px 0;
+                        @media screen and (max-width: 1000px) {
+                            padding: 32px 0 0;
+                        }
+                        .case-study-container__case-img {
+                            width: 100%;
+                            aspect-ratio: 169/172;
+                            object-fit: cover;
+                            @media screen and (max-width: 1000px) {
+                                max-width: 300px;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .case-study-container__case-person-info-block {
+                        color: var.$font-color;
+                        .case-study-container__feature-name-box {
+                            display: flex;
+                            padding: 0 0 8px 0;
+
+                            .case-study-container__feature {
+                                width: 30%;
+                                background-color: #ffffff;
+                                padding: 8px 0 8px 8px;
+                                margin: 0 8px 0 0; 
+                            }
+                            .case-study-container__name {
+                                background-color: #ffffff;
+                                padding: 8px 0 8px 8px;
+                                width: 100%;
+                            }
+                        }
+                        .case-study-container__case-point {
+                            padding: 0 0 8px 0;
+                            background-color: #ffffff;
+                            padding: 8px 0 8px 8px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .case-study-container__case-box:last-child {
+                padding: 0;
+            }
+        }
+    }
+}

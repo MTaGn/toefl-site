@@ -1,0 +1,16 @@
+@use "variables" as var;
+
+.breadcrumb-box {
+    padding: 0 0 56px 0;
+    
+    .breadcrumb {
+        background-color: var.$bread-bkg-color;
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        padding: 0 0 0 150px;
+        @media screen and (max-width: 599px) {
+            padding: 0 0 0 32px;
+        }
+    }
+}

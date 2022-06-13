@@ -1,0 +1,97 @@
+@use "variables" as var;
+
+.question-container {
+    padding: 56px 0 72px;
+    width: 100%;
+
+    .question-container__inner-box {
+        width: 96%;
+        max-width: 900px;
+        margin: 0 auto;
+
+        .question-container__subheading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 56px 0;
+        }
+        .question-container__desc-box {
+            display: flex;
+            background-color: #F8F8F8;
+            margin: 0 0 8px 0;
+            text-align: center;
+
+            .question-container__number {
+                font-size: 18px;
+                width: 7%;
+                background-color: #F5A623;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (max-width: 1000px) {
+                    width: 12%;
+                }
+            }
+            .question-container__main-text {
+                width: 30%;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 23px 68px 23px 16px;
+                text-align: left;
+
+            }
+            .question-container__partition {
+                width: 1px;
+                height: 29px;
+                background-color: #C3C3C3;
+                margin: auto 0;
+
+            }
+            .question-container__answer-text {
+                padding: 23px 0 23px 68px;
+            }
+
+            .question-container__text-block {
+                display: flex;
+                width: 100%;
+                @media screen and (max-width: 1000px) {
+                    flex-direction: column;
+                }
+                .question-container__number {
+                    font-size: 18px;
+                    width: 7%;
+                    background-color: #F5A623;
+                    color: #ffffff;
+                    padding: 23px 0;
+                }
+                .question-container__main-text {
+                    width: 30%;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 23px 68px 23px 16px;
+                    text-align: left;
+                    @media screen and (max-width: 1000px) {
+                        width: 100%;
+                    }
+                }
+                .question-container__partition {
+                    width: 1px;
+                    height: 29px;
+                    background-color: #C3C3C3;
+                    margin: auto 0;
+                    @media screen and (max-width: 1000px) {
+                        display: none;
+                    }
+                }
+                .question-container__answer-text {
+                    padding: 23px 0 23px 68px;
+                    @media screen and (max-width: 1000px) {
+                        text-align: left;
+                        padding: 0 68px 23px 16px;
+                    }
+                }   
+            }
+        }
+    }
+}

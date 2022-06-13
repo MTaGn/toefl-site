@@ -1,0 +1,123 @@
+@use "variables" as var;
+
+.single-page-container {
+    width: 100%;
+}
+
+.single-page-container__inner-box {
+    display: flex;
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 88px 0;
+    @media screen and (max-width: 599px) {
+        flex-direction: column;
+    }
+}
+
+.single-page-container__article-and-recommend-box {
+    width: 70%;
+    padding: 0 40px 0 0;
+    @media screen and (max-width: 599px) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.single-page-container__detail-box {
+
+}
+
+.single-page-container__label {
+    background-color: var.$font-color;
+    color: #ffffff;
+    padding: 4px 16px;
+    display: inline-block;
+    margin: 0 0 32px 0;
+}
+
+.single-page-container__heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 24px 0;
+}
+
+.single-page-container__sns-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+}
+.single-page-container__sns {
+}
+
+.single-page-container__img-block {
+    padding: 0 0 40px 0;
+}
+
+.single-page-container__img {
+    width: 100%;
+}
+
+.single-page-container__blog-overview-block {
+    padding: 0 0 32px 0;
+}
+
+.single-page-container__subheading {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 0 32px 0;
+}
+
+.single-page-container__blog-detail-block {
+    padding: 0 0 56px 0;
+}
+
+.single-page-container__h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 0 0 8px;
+    border-left: solid 4px var.$font-color;
+    margin: 0 0 24px 0;
+}
+
+.single-page-container__h3-detail {
+    padding: 0 0 32px 0;
+}
+
+.single-page-container__h3-detail--grey-bkg {
+    background-color: #f8f8f8;
+    padding: 16px 24px;
+}
+
+.single-page-container__recommend-title {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 0 32px 0;
+}
+
+// sidebar
+.single-page-container__sidebar-box {
+    width: 30%;
+    @media screen and (max-width: 599px) {
+        width: 50%;
+    }
+
+    .archive {
+        .archive_list {
+            .cat-item {
+                list-style: inside;
+                padding: 0 0 16px 0;
+            }
+        }
+    }
+}
+
+.single-page-container__sidebar-subheading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var.$font-color;
+    padding: 16px 0;
+    text-align: center;   
+    margin: 0 0 32px 0;
+}

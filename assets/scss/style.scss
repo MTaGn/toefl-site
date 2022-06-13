@@ -1,0 +1,39 @@
+/*
+Theme Name: english-school
+Theme URI: 
+Author: wp_toefl
+Author URI: 
+Description: toefl対策スクールサイト
+Version: 1.0
+*/
+@use "common" as common;
+@use "header-container" as header;
+@use "main-container" as main;
+@use "mainvisual-container" as mainvisual;
+@use "strengths-container" as strengths;
+@use "case-study-container" as case;
+@use "how-to-use-container" as how;
+@use "question-container" as question;
+@use "blog-info-container" as blog-info;
+@use "blog-container" as blog;
+@use "info-container" as info;
+@use "conversion-container" as conversion;
+@use "contact-container" as contact;
+@use "footer-container" as footer;
+
+@use "price-page-container" as price-page;
+@use "category-blog-page-container" as category-blog-page;
+@use "category-cat1-page-container" as category-cat1-page;
+@use "info-page-container" as info-page;
+@use "single-page-container" as single-page;
+@use "single-info-page-container" as single-info-page;
+@use "contact-page-container" as contact-page;
+@use "contact-thanks-page-container" as contact-thanks-page;
+@use "privacy-policy-container" as privacy-policy;
+@use "not-found-page-container" as not-found-page;
+
+@use "breadcrumb" as breadcrumb;
+@use "pagination" as pagination;
+
+@use "variables" as var;
+
